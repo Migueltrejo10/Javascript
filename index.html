@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="imagenes/icono.png">
+        <title>Servicio de Ayuda para Automoviles</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+
+<body>
+  <!-- Pantalla Servicio solicitado -->
+  <div class="ventana" id="vent">
+  </div>
+
+  <!--------------------------------------HEADER-------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand">RF Emergencias</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#quienesSomos">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#formulario">Solicitar servicio</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!--------------------------------------INICIO-------------------------------------->
+
+      <div class="row text-center" id="inicio">
+          <h1>Servico de auxilio mecánico</h1><br>
+          <div class="conteiner" id="texto1">
+              <section class="conteiner">
+              <div class="col-xs-12 col-md-12">
+                  <p>
+                    ¿Tu seguro demora mas de 2 horas para enviarte una grúa?
+                    Con nuestro localizador virtual podras ver cuanto demoraremos
+                    y el costo del traslado.
+                  </p>
+              </div>
+                </section>
+          </div>
+      </div>
+          <div class="text-center">
+            <img src="https://img.remediosdigitales.com/8d0bb6/grua-3/1366_2000.jpg" class="img-fluid" alt="...">
+          </div>
+
+  <!--------------------------------------QUIENES SOMOS-------------------------------------->
+
+      <div class="container-fluid" id="quienesSomos">
+      <h2 class="text-center" id="titulo2">Simple, seguro y confiable.</h2>
+      <div class="conteiner imagen_quienesSomos">
+        <img src="https://image.freepik.com/foto-gratis/sentirse-bien-mecanico-sosteniendo-neumatico-taller-reparacion-reemplazo-neumaticos-invierno-verano_146671-16780.jpg" id="imagen2" class="img" alt="...">
+      </div>
+      <div id="texto2">
+        <p class="conteiner text-center">
+            <b>En algún momento estuvimos en tu lugar, un domingo a la madrugada donde nadie podía darte una mano o tal vez
+            tu auxilio mecánico te tuvo esperando ya más de cuatro horas sin aun dar señales claras de que vaya a llegar.
+            En ese momento necesitábamos seguridad, si la persona que nos habla del otro lado del teléfono
+            nos decía que iban a demorar tres horas ¡En verdad sean tres horas y no que despues nos llamen para decirnos
+            “podrían” llegar a demorar hasta tres horas más!
+            </b>
+        </p>
+      </div>
+    </div>
+
+    <!--------------------------------------FORMULARIO-------------------------------------->
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+    </form>
+  
+  <!--------------------------------------ULTIMA SOLICITUD-------------------------------------->
+
+  <h3 class="conteiner text-center" id="solicitud" >Tu ultima solicitud</h3>
+  <table class="table text-center">
+    <thead>
+      <tr>
+        <th>Nombre</th> <br>
+        <th>Apellido</th> <br>
+        <th>Costo del servicio</th> <br>
+        <th>Tiempo de espera</th> <br>
+      </tr>
+    </thead>
+    <tbody id="table">
+
+    </tbody>
+  </table>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
